@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <!-- boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- bootstrap-grid -->
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <!-- normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- poppins google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <!-- font face observer -->
+  <script src="js/fontfaceobserver.js"></script>
+  <script>
+    const poppinsObserver = new FontFaceObserver("Poppins");
+    poppinsObserver.load().then(function () {
+      document.documentElement.classList.add("fonts-loaded");
+    })
+  </script>
+  <!-- custom style -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="sign-in-header">
+    <div class="container">
+      <div class="sign-in-up">
+        <div class="brand">
+          <h1 class="text-capitalize">
+            <a href="index.html"><i class="bx bx-bookmarks"></i><span>education</span></a>
+          </h1>
+        </div>
+
+        <a href="signin.html" class="text-capitalize"><i class='bx bx-log-in'></i>sign in</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <div class="sign-in-up-content">
+        <h2 class="text-capitalize">sign up</h2>
+        <form action="#" method="get">
+
+          <div class="group">
+            <label for="fname" class="text-capitalize">first name</label>
+            <input type="text" name="fname" id="fname" autocomplete autofocus required>
+          </div>
+
+          <div class="group">
+            <label for="lname" class="text-capitalize">last name</label>
+            <input type="text" name="lname" id="lname" autocomplete required>
+          </div>
+
+          <div class="group">
+            <label for="email" class="text-capitalize">email</label>
+            <input type="email" name="email" id="email" autocomplete required>
+          </div>
+
+          <div class="group">
+            <label for="password" class="text-capitalize">password</label>
+            <input type="password" name="password" id="password" autocomplete="new-password" required>
+          </div>
+
+          <div class="group">
+            <label for="cpassword" class="text-capitalize">confirm password</label>
+            <input type="password" name="cpassword" id="cpassword" autocomplete="new-password" required>
+          </div>
+
+          <div class="group">
+            <label for="bday" class="text-capitalize">birthday</label>
+            <input type="date" name="bday" id="bday" required>
+          </div>
+
+          <button type="submit" class="text-capitalize">sign up</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- start footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+
+        <ul class="footer-item">
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>education business</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>teach on education</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>about education</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>contact us</span></a></li>
+
+        </ul>
+
+        <ul class="footer-item">
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>careers</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>blog</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>help and support</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>affiliated</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>investors</span></a></li>
+        </ul>
+
+        <ul class="footer-item">
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>conditions</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>privacy policy</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>sitemap</span></a></li>
+          <li><a href=""><i class='bx bxs-chevrons-right'></i><span>accessibility statement</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- start copyright -->
+    <div class="copyright">
+      <div class="container">
+        <div class="copyright-content">
+          <h3 class="logo"><i class="bx bx-bookmarks"></i> <span class="text-capitalize">education</span></h3>
+          <p class="copy">copyright &copy; 2022 belkhir saber</p>
+        </div>
+      </div>
+    </div>
+    <!-- end copyright -->
+
+  </footer>
+  <!-- end footer -->
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
