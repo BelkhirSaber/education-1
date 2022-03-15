@@ -36,9 +36,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
-    rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer">
+    rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer" media="all" />
   <!-- font face observer -->
-  <script src="js/fontfaceobserver.js" defer></script>
+  <script src="js/fontfaceobserver.js"></script>
   <script>
     const poppinsObserver = new FontFaceObserver("Poppins");
     poppinsObserver.load().then(function () {
@@ -50,9 +50,11 @@
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- bootstrap-grid -->
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" crossorigin="anonymous" />
   <!-- custom style -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
@@ -65,9 +67,6 @@
         <p class="text-capitalize">Promotion ends today | Start achieving your goals with our courses starting at US
           $11.99 End in 11 h 47 min 21 s.</p>
       </div>
-      <!-- <div class="container">
-        
-      </div> -->
     </div>
 
     <div class="navbar">
@@ -101,7 +100,8 @@
               <li class="link text-capitalize"><a href="signin.html">
                   <i class='bx bx-log-in'></i><span>sign in</span></a>
               </li>
-              <li class="link text-capitalize"><a href="#"><i class='bx bx-cart-alt'></i> <span>basket</span></a></li>
+              <li class="link counter-items text-capitalize"><a href="basket.html"><i class='bx bx-cart-alt'></i>
+                  <span>basket</span></a></li>
             </ul>
 
             <div id="megamenu">
@@ -110,29 +110,30 @@
                   <img src="images/megamenu.png" alt="image about education">
                 </div>
                 <ul class="megamenu-nav">
-                  <li class="link text-capitalize"><a href="#">
+                  <li class="link text-capitalize"><a href="category.html">
                       <i class='bx bx-code-alt'></i><span>development</span>
                     </a></li>
-                  <li class="link text-capitalize"><a href="#">
+                  <li class="link text-capitalize"><a href="category.html">
                       <i class='bx bx-briefcase-alt'></i></i><span>business</span></a></li>
-                  <li class="link text-capitalize"><a href="#">
+                  <li class="link text-capitalize"><a href="category.html">
                       <i class='bx bxs-bank'></i><span>finance an acounting</span></a></li>
-                  <li class="link text-capitalize"><a href="#">
+                  <li class="link text-capitalize"><a href="category.html">
                       <i class='bx bx-sitemap'></i><span>it and software</span></a></li>
-                  <li class="link text-capitalize"><a href="#">
+                  <li class="link text-capitalize"><a href="category.html">
                       <i class='bx bx-desktop'></i><span>operating systems and servers</span></a></li>
-                  <li class="link text-capitalize"><a href="#">
+                  <li class="link text-capitalize"><a href="category.html">
                       <i class='bx bx-dumbbell'></i><span>personal developement</span></a></li>
-                  <li class="link text-capitalize"><a href="#">
+                  <li class="link text-capitalize"><a href="category.html">
                       <i class='bx bx-palette'></i><span>design</span></a></li>
-                  <li class="link text-capitalize"><a href="#">
+                  <li class="link text-capitalize"><a href="category.html">
                       <i class='bx bxs-discount'></i><span>marketing</span></a></li>
                 </ul>
 
                 <ul class="usermenu">
                   <li class="link text-capitalize"><a href="signin.html"><i class='bx bx-log-in'></i><span>sign
                         in</span></a></li>
-                  <li class="link text-capitalize"><a href="#"><i class='bx bx-cart-alt'></i> <span>basket</span></a>
+                  <li class="link counter-items text-capitalize"><a href="basket.html"><i class='bx bx-cart-alt'></i>
+                      <span>basket</span></a>
                   </li>
                 </ul>
               </div>
@@ -143,51 +144,46 @@
     </div>
   </header>
   <!-- end header -->
+
   <!-- start main -->
   <main>
-    <div class="container-xl">
-      <div class="slider">
+    <div class="slider">
+      <div class="slider-wrapper">
 
-        <div class="slider-wrapper">
-          <div class="slid active">
-            <img src="images/slider-image/1.webp" alt="slider image">
-          </div>
-
-          <div class="slid">
-            <img src="images/slider-image/2.webp" alt="slider image" loading="lazy">
-          </div>
-
-          <div class="slid">
-            <img src="images/slider-image/3.webp" alt="slider image" loading="lazy">
-          </div>
-
-          <div class="slid">
-            <img src="images/slider-image/4.webp" alt="slider image" loading="lazy">
-          </div>
-
-          <div class="slid">
-            <img src="images/slider-image/5.webp" alt="slider image" loading="lazy">
-          </div>
+        <div class="slid">
+          <img src="images/slider-image/1.webp" alt="slider image">
         </div>
 
-        <div class="arrow-control">
-          <span>
-            <i class="bx bx-chevron-left"></i>
-          </span>
-
-          <span>
-            <i class="bx bx-chevron-right"></i>
-          </span>
+        <div class="slid">
+          <img src="images/slider-image/2.webp" alt="slider image" loading="lazy">
         </div>
 
-        <ol class="control">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+        <div class="slid">
+          <img src="images/slider-image/3.webp" alt="slider image" loading="lazy">
+        </div>
+
+        <div class="slid">
+          <img src="images/slider-image/4.webp" alt="slider image" loading="lazy">
+        </div>
+
+        <div class="slid">
+          <img src="images/slider-image/5.webp" alt="slider image" loading="lazy">
+        </div>
       </div>
+
+      <span class="arrow-control left" id="previous"><i class="bx bx-chevron-left"></i></span>
+      <span class="arrow-control right" id="next"><i class="bx bx-chevron-right"></i></span>
+
+      <!-- <div class="arrow-control">
+
+      </div> -->
+      <ol class="control">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
     </div>
   </main>
   <!-- end main -->
@@ -271,6 +267,162 @@
   </section>
   <!-- end best-category -->
 
+  <!-- start best-courses-rating  -->
+  <section class="best-cours-rating text-capitalize">
+    <div class="container">
+      <h2 class="title-section">best courses rating</h2>
+      <div class="cours-rating-content">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+              <a href="details.html" class="card">
+                <div class="image">
+                  <img src="images/cours/nodejs.png" alt="cours image">
+                </div>
+                <div class="info">
+                  <div class="desc">
+                    <h3>node bootcamp</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptate ratione</p>
+                  </div>
+                  <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="swiper-slide">
+
+              <a href="details.html" class="card">
+                <div class="image">
+                  <img src="images/cours/java.webp" alt="cours image">
+                </div>
+                <div class="info">
+                  <div class="desc">
+                    <h3>java complete guide</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptate ratione</p>
+                  </div>
+                  <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="swiper-slide">
+              <a href="details.html" class="card">
+                <div class="image">
+                  <img src="images/cours/laravel.png" alt="cours image">
+                </div>
+
+                <div class="info">
+                  <div class="desc">
+                    <h3>laravel for beginner</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptate ratione</p>
+                  </div>
+
+                  <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="details.html" class="card">
+                <div class="image">
+                  <img src="images/cours/html.png" alt="cours image">
+                </div>
+
+                <div class="info">
+                  <div class="desc">
+                    <h3>html5 complete cours</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptate ratione</p>
+                  </div>
+
+                  <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="details.html" class="card">
+                <div class="image">
+                  <img src="images/cours/css.png" alt="cours image">
+                </div>
+
+                <div class="info">
+                  <div class="desc">
+                    <h3>introduction to css</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptate ratione</p>
+                  </div>
+
+                  <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="details.html" class="card">
+                <div class="image">
+                  <img src="images/cours/angular.jpg" alt="cours image">
+                </div>
+
+                <div class="info">
+                  <div class="desc">
+                    <h3>introduction to angular</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptate ratione</p>
+                  </div>
+
+                  <div class="rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- End Swiper -->
+      </div>
+    </div>
+  </section>
+  <!-- end best-courses-rating -->
+
   <!-- start trusted-us-companies -->
   <section class="trusted-us-companies">
     <div class="container">
@@ -316,6 +468,7 @@
     </div>
   </section>
   <!-- end business-education -->
+
   <!-- start footer -->
   <footer>
     <div class="container">
@@ -367,6 +520,41 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <!-- bootstrap -->
   <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="js/slider.js" defer></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" crossorigin="anonymous"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      // slidesPerGroupAuto: true,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      breakpoints: {
+        // window with greate then 576px
+        576: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        // window with greate then 992px
+        992: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+  </script>
   <script src="js/index.js" defer></script>
 
 </body>
